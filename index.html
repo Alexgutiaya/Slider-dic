@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mi Slider</title>
+
+	<link rel="stylesheet" href="navbar.css">
+	<link rel="stylesheet" href="nivo-slider.css">
+	<link rel="stylesheet" href="mi-slider.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+	<script src="jquery.nivo.slider.js"></script>
+
+	<script type="text/javascript">
+		$(window).on('load', function() {
+		    $('#slider').nivoSlider();
+		});
+	</script>
+</head>
+<body>
+
+	<header>
+      <a href="#" class="brand">Paisaje emocional</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+          <a href="#">Inicio</a>
+          <a href="#">Nosotros</a>
+          <a href="#">Galeria</a>
+          <a href="#">Contactanos</a>
+        </div>
+      </div>
+    </header>
+
+	<div class="slider-wrapper theme-mi-slider">
+		<div id="slider" class="nivoSlider">
+		    <img src="imagen01.jpg" alt="" title="#htmlcaption1" />
+		    <img src="imagen02.jpg" alt="" title="#htmlcaption2" />
+		    <img src="imagen03.jpg" alt="" title="#htmlcaption3" />
+		</div> 
+		<div id="htmlcaption1" class="nivo-html-caption">
+		    <h1>la música es amor buscando palabras</h1>
+		    <p>Siempre es más valioso tener el respeto que la admiración de las personas</p>
+		</div>
+		<div id="htmlcaption2" class="nivo-html-caption">
+		    <h1>La naturaleza es el arte de Dios</h1>
+		</div>
+		<div id="htmlcaption3" class="nivo-html-caption">
+		    <h1>La soledad es la casa de la paz</h1>
+		</div>
+	</div>
+</body>
+</html>
